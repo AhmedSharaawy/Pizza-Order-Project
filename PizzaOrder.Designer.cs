@@ -61,10 +61,16 @@
             this.label9 = new System.Windows.Forms.Label();
             this.lblToppings = new System.Windows.Forms.GroupBox();
             this.lblTotalPrice = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lblQuantity = new System.Windows.Forms.Label();
             this.gbSize.SuspendLayout();
             this.gbWhereToEat.SuspendLayout();
             this.gbCurst.SuspendLayout();
             this.gbToppoings.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // gbSize
@@ -416,7 +422,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(611, 378);
+            this.label6.Location = new System.Drawing.Point(611, 420);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(154, 29);
             this.label6.TabIndex = 9;
@@ -428,7 +434,7 @@
             this.lblCurstTypy.BackColor = System.Drawing.Color.Transparent;
             this.lblCurstTypy.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCurstTypy.ForeColor = System.Drawing.Color.Yellow;
-            this.lblCurstTypy.Location = new System.Drawing.Point(771, 381);
+            this.lblCurstTypy.Location = new System.Drawing.Point(771, 424);
             this.lblCurstTypy.Name = "lblCurstTypy";
             this.lblCurstTypy.Size = new System.Drawing.Size(65, 25);
             this.lblCurstTypy.TabIndex = 11;
@@ -441,7 +447,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(592, 424);
+            this.label7.Location = new System.Drawing.Point(591, 452);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(187, 29);
             this.label7.TabIndex = 12;
@@ -453,7 +459,7 @@
             this.lblWhereToEat.BackColor = System.Drawing.Color.Transparent;
             this.lblWhereToEat.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWhereToEat.ForeColor = System.Drawing.Color.Yellow;
-            this.lblWhereToEat.Location = new System.Drawing.Point(771, 424);
+            this.lblWhereToEat.Location = new System.Drawing.Point(771, 456);
             this.lblWhereToEat.Name = "lblWhereToEat";
             this.lblWhereToEat.Size = new System.Drawing.Size(108, 25);
             this.lblWhereToEat.TabIndex = 13;
@@ -466,7 +472,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(681, 488);
+            this.label9.Location = new System.Drawing.Point(675, 498);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(172, 31);
             this.label9.TabIndex = 15;
@@ -496,6 +502,59 @@
             this.lblTotalPrice.Size = new System.Drawing.Size(133, 96);
             this.lblTotalPrice.TabIndex = 14;
             this.lblTotalPrice.Text = "$0";
+            this.lblTotalPrice.Click += new System.EventHandler(this.lblTotalPrice_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.numericUpDown1);
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.Red;
+            this.groupBox1.Location = new System.Drawing.Point(294, 306);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(238, 100);
+            this.groupBox1.TabIndex = 17;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "How Many Pizza Order";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown1.Location = new System.Drawing.Point(6, 32);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(118, 47);
+            this.numericUpDown1.TabIndex = 0;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(617, 382);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(122, 29);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Quantity :";
+            // 
+            // lblQuantity
+            // 
+            this.lblQuantity.AutoSize = true;
+            this.lblQuantity.BackColor = System.Drawing.Color.Transparent;
+            this.lblQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantity.ForeColor = System.Drawing.Color.Red;
+            this.lblQuantity.Location = new System.Drawing.Point(771, 386);
+            this.lblQuantity.Name = "lblQuantity";
+            this.lblQuantity.Size = new System.Drawing.Size(25, 25);
+            this.lblQuantity.TabIndex = 19;
+            this.lblQuantity.Text = "0";
             // 
             // PizzaOrder
             // 
@@ -505,6 +564,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(883, 640);
+            this.Controls.Add(this.lblQuantity);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblToppings);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.lblTotalPrice);
@@ -537,6 +599,8 @@
             this.gbCurst.PerformLayout();
             this.gbToppoings.ResumeLayout(false);
             this.gbToppoings.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -576,6 +640,10 @@
         private System.Windows.Forms.GroupBox lblToppings;
         private System.Windows.Forms.Label lblTotalPrice;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblQuantity;
     }
 }
 

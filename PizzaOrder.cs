@@ -57,6 +57,10 @@ namespace Pizza_Project
         {
 
         }
+        private void lblTotalPrice_Click(object sender, EventArgs e)
+        {
+
+        }
 
         // _______________________________________________________________________
 
@@ -269,13 +273,18 @@ namespace Pizza_Project
                 return Convert.ToSingle(rbThinCurst.Tag);
             }
         }
+
         float Calculator_TotalPrice()
         {
             return GetSizePrice() + GetToppingsPrice() + GetCurstTypePrice();
         }
         void TotalPrice()
         {
-            lblTotalPrice.Text = "$" + Calculator_TotalPrice().ToString(); 
+            float Quantity = Convert.ToSingle(numericUpDown1.Value);
+
+            float Total = Calculator_TotalPrice() * Quantity;
+
+            lblTotalPrice.Text = "$" + Total.ToString(); 
         }
 
         // ---------------------------------------------------------------------------
@@ -315,6 +324,11 @@ namespace Pizza_Project
             btnOrderPizza.Enabled = true;
 
             lblTotalPrice.Text = "$20";
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            TotalPrice();
         }
     }
 }
